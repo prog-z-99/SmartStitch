@@ -13,6 +13,12 @@ def launch():
         help='Sets the path of Input Folder',
     )
     parser.add_argument(
+        "-o",
+        dest='output_folder',
+        type=str,
+        help='Sets the path of Output Folder',
+    )
+    parser.add_argument(
         "-sh",
         dest='split_height',
         type=positive_int,

@@ -9,6 +9,7 @@ console = "python -m SmartStitchConsole"
 gui = "python -m SmartStitchGUI"
 build="pyinstaller Build.spec"
 build-no-icon="pyinstaller BuildNoIcon.spec"
+mass-stitch = 'python3 SmartStitchConsole.py -sh 10000 -o ${OUTPUT_DIR}  -i ${INPUT_DIR}'
 
 [packages]
 natsort = "*"

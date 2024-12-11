@@ -24,7 +24,7 @@ class ConsoleStitchProcess:
         start_time = time()
         print('--- Process Starting Up ---')
         print('Exploring input directory for working directories')
-        input_dirs = explorer.run(input=kwargs.get("input_folder"))
+        input_dirs = explorer.run(input=kwargs.get("input_folder"), output=kwargs.get("output_folder"))
         input_dirs_count = len(input_dirs)
         print('[{count}] Working directories were found'.format(count=input_dirs_count))
         dir_iteration = 1
